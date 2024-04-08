@@ -30,7 +30,7 @@
     <div class="card-body">
         <div class="form-group">
             <label for="exampleInputEmail1">Kode Stok</label>
-            <input type="text" class="form-control" id="exampleInputEmail1">
+            <input type="text" class="form-control" name="kode_stok">
         </div>
         <div class="form-group">
             <label for="exampleInputPassword1">Jenis Tisu</label>
@@ -42,7 +42,7 @@
         <div class="form-group">
             <label for="exampleInputPassword1">Tanggal Masukk</label>
             <div class="input-group date" id="reservationdate" data-target-input="nearest">
-                <input type="date" class="form-control datetimepicker-input"/>
+                <input type="date" class="form-control datetimepicker-input" name="tanggal_masuk"/>
             </div>
         </div>
         <div class="form-group">
