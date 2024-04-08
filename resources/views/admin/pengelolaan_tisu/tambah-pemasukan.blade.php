@@ -40,7 +40,7 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="exampleInputPassword1">Tanggal Masuk</label>
+            <label for="exampleInputPassword1">Tanggal Masukk</label>
             <div class="input-group date" id="reservationdate" data-target-input="nearest">
                 <input type="date" class="form-control datetimepicker-input"/>
             </div>
