@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+
+    background: url('/images/Background.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box {
+    position: relative;
+    width: 400px;
+    height: 490px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tajuk-login{
+    margin-top: -40px;
+}
+h2 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label input {
+    margin-right: 3px;
+
+}
+
+.forget label a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.forget label a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.register {
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+}
+
+a {
+    color: #fff;
+    /* font-weight: 600; */
+}
+
+/* input box select */
+.inputbox select {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+    appearance: none;
+    /* Removes default browser styling */
+    -webkit-appearance: none;
+    /* For Safari */
+    -moz-appearance: none;
+    /* For Firefox */
+    -ms-appearance: none;
+    /* For Internet Explorer */
+}
+
+.inputbox select:focus {
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox select:valid~label {
+    top: -5px;
+}
+
+.inputbox select:focus~label,
+.inputbox select:valid~label {
+    top: -5px;
+}
+
+/* Ensure the label for the select option is styled correctly */
+.inputbox select+label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+
+/* Adjust the position of the label when the select is focused or has a value */
+.inputbox select:focus~label,
+.inputbox select:valid~label {
+    top: -5px;
+}
+
+a.rotate-text {
+    transform: rotate(270deg);
+    margin-right: -40px;
+    margin-top: -280px;
+    /* transform-origin: bottom left; */
+}
+
+/* CSS yang ada */
+
+/* Penyesuaian untuk layar yang lebih kecil */
+@media (max-width: 360px) {
+    .form-box {
+        width: 90%; /* Mengubah lebar form untuk layar yang lebih kecil */
+        height: auto; /* Mengubah tinggi form untuk menyesuaikan konten */
+        padding: 20px; /* Menambahkan padding untuk memberikan ruang */
+    }
+
+    .inputbox {
+        width: 100%; /* Mengubah lebar input untuk menyesuaikan dengan lebar form */
+    }
+
+    .inputbox label {
+        font-size: 0.8em; /* Mengubah ukuran font label untuk layar yang lebih kecil */
+    }
+
+    .inputbox input, .inputbox select {
+        font-size: 0.8em; /* Mengubah ukuran font input dan select untuk layar yang lebih kecil */
+    }
+
+    button {
+        font-size: 0.8em; /* Mengubah ukuran font tombol untuk layar yang lebih kecil */
+    }
+
+    .register p a, .forget label a {
+        font-size: 0.8em; /* Mengubah ukuran font link untuk layar yang lebih kecil */
+    }
+}
